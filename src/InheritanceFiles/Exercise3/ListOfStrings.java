@@ -2,7 +2,6 @@ package InheritanceFiles.Exercise3;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 import java.io.File;
@@ -25,5 +24,9 @@ public class ListOfStrings {
     
     public int getLength(){
         return strings.size();
+    }
+
+    public static void main(String args) throws FileNotFoundException {
+        System.out.println(new ListOfStrings("/resources/StringExample").getLength());
     }
 }
