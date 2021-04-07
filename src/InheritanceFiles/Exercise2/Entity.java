@@ -14,7 +14,11 @@ public abstract class Entity {
     }
 
     public void increaseAge(){
-        age++;
+        if (age == -1){
+            System.out.println("age is unknown");
+        }
+        else
+            age++;
     }
 
     public boolean isIndividual() {
