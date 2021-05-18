@@ -19,5 +19,8 @@ public class Main {
             System.out.println("\n" + pet.sound() + "\n");
             System.out.println();
         }
+
+        myPets.get(0).hadBirthday();
+        System.out.println(myPets.get(0));
     }
 }

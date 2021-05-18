@@ -7,20 +7,24 @@ public abstract class Pet {
 
     // A pet has an age and a name
     private int age;
-    private String name;
+    private final String NAME;
 
     // super constructor
     Pet(int age, String name){
         this.age = age;
-        this.name = name;
+        this.NAME = name;
     }
 
     // All animals and pets make some kind of sound right?
     public abstract String sound();
 
+    public void hadBirthday(){
+        age++;
+    }
+
     // description using toString.
     @Override
     public String toString(){
-        return "Name: " + name + "\nAge: " + age;
+        return "Name: " + NAME + "\nAge: " + age;
     }
 }
